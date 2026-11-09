@@ -12,7 +12,7 @@ BorderRight=3
 BorderBottom=4
 
 TitleEdgeTop=0
-TitleEdgeBottom=-4
+TitleEdgeBottom=3
 TitleEdgeLeft=4
 TitleEdgeRight=0
 TitleBorderLeft=8
@@ -42,6 +42,6 @@ PaddingLeft=47
 
 TitleHeightMaximized=28
 TitleEdgeTopMaximized=0
-TitleEdgeBottomMaximized=0
+TitleEdgeBottomMaximized=3
 TitleEdgeLeftMaximized=0
 TitleEdgeRightMaximized=0

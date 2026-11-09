@@ -3,15 +3,17 @@
 #   ./install.sh                  install everything and apply (centred taskbar)
 #   ./install.sh --layout=left    same, with the taskbar on the left
 #   ./install.sh --no-apply       install only; pick the theme in System Settings later
+#   ./install.sh --titlebar-opacity=90   window title bar opacity in percent (default 85)
 set -euo pipefail
 cd "$(dirname "$0")"
 DATA="${XDG_DATA_HOME:-$HOME/.local/share}"
 CONF="${XDG_CONFIG_HOME:-$HOME/.config}"
-LAYOUT="Glasspane"; APPLY=1
+LAYOUT="Glasspane"; APPLY=1; TB_OPACITY=""
 for a in "$@"; do case "$a" in
   --layout=left)   LAYOUT="Glasspane-Left" ;;
   --layout=center) LAYOUT="Glasspane" ;;
   --no-apply)      APPLY=0 ;;
+  --titlebar-opacity=*) TB_OPACITY="${a#*=}" ;;
   -h|--help)       sed -n '2,6p' "$0"; exit 0 ;;
   *) echo "unknown option: $a" >&2; exit 1 ;;
 esac; done
@@ -26,6 +28,7 @@ put src/share/plasma/plasmoids/com.joansitoh.glasspane.start     "$DATA/plasma/p
 python3 scripts/build-mo.py po "$DATA/plasma/plasmoids/com.joansitoh.glasspane.start"
 put src/share/color-schemes/Glasspane.colors                     "$DATA/color-schemes"
 put src/share/aurorae/themes/Glasspane                           "$DATA/aurorae/themes"
+[ -n "$TB_OPACITY" ] && scripts/titlebar-opacity.sh "$TB_OPACITY"
 put src/share/icons/Win10OS-cursors                              "$DATA/icons"
 mkdir -p "$DATA/icons/hicolor/scalable/apps"
 cp src/share/icons/hicolor/scalable/apps/glasspane-start.svg     "$DATA/icons/hicolor/scalable/apps/"

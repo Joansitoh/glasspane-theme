@@ -36,6 +36,7 @@ cd glasspane-theme
 ./install.sh                 # centered taskbar (Windows 11 style)
 ./install.sh --layout=left   # taskbar on the left
 ./install.sh --no-apply      # install only, choose the theme in System Settings later
+./install.sh --titlebar-opacity=95   # less see-through window title bars (0–100, default 85)
 ```
 
 This installs every component into `~/.local/share` and `~/.config` and applies the theme.
@@ -93,6 +94,7 @@ glasspane-theme/
 ├── po/                              translations of the start menu (es.po; add more as <lang>.po)
 ├── scripts/
 │   ├── package.sh                   assembles the global-theme packages (centered / left)
+│   ├── titlebar-opacity.sh          changes the window title bar opacity of the installed theme
 │   ├── build-mo.py                  compiles po/*.po into the widget (no gettext needed)
 │   └── make-art.py                  regenerates the artwork, previews and splash
 └── src/
@@ -112,6 +114,8 @@ glasspane-theme/
 - **Panel layout** (height, widgets, spacing, clock format, tray items):
   `src/share/plasma/look-and-feel/com.joansitoh.Glasspane/contents/layouts/org.kde.plasma.desktop-layout.js`
   (and `src/variants/left/` for the left variant). Re-run `./install.sh` after editing.
+- **Window title bar opacity**: `scripts/titlebar-opacity.sh 95` (percent, 0–100; no argument prints the
+  current value). Applies immediately; a later `./install.sh` resets it unless you pass `--titlebar-opacity=`.
 - **Start menu**: `src/share/plasma/plasmoids/com.joansitoh.glasspane.start/contents/ui/` (`StartMenu.qml`, `main.qml`).
 - **Translations**: the widget is written in English; copy `po/es.po` to `po/<lang>.po` and translate it.
 - **Artwork**: edit `scripts/make-art.py` and run `python3 scripts/make-art.py` (needs ImageMagick with RSVG).
