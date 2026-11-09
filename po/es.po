@@ -1,0 +1,53 @@
+# Spanish translation of Glasspane Start.
+msgid ""
+msgstr ""
+"Project-Id-Version: glasspane-theme\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Start"
+msgstr "Inicio"
+
+msgid "Unpin"
+msgstr "Desanclar"
+
+msgid "Pin to Start"
+msgstr "Anclar al inicio"
+
+msgid "Search apps, settings and documents"
+msgstr "Buscar aplicaciones, configuración y documentos"
+
+msgid "Pinned"
+msgstr "Anclado"
+
+msgid "All apps"
+msgstr "Todas las aplicaciones"
+
+msgid "Recommended"
+msgstr "Recomendado"
+
+msgid "Back"
+msgstr "Atrás"
+
+msgid "No results"
+msgstr "Sin resultados"
+
+msgid "Power"
+msgstr "Energía"
+
+msgid "Lock"
+msgstr "Bloquear"
+
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+msgid "Sleep"
+msgstr "Suspender"
+
+msgid "Restart"
+msgstr "Reiniciar"
+
+msgid "Shut down"
+msgstr "Apagar"

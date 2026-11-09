@@ -1,0 +1,16 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [{"Name": "Joansitoh"}],
+        "Category": "Application Launchers",
+        "Description": "Windows 11–style start menu: search, pinned apps, recommended items and power menu",
+        "FormFactors": ["desktop"],
+        "Icon": "glasspane-start",
+        "Id": "com.joansitoh.glasspane.start",
+        "License": "GPL-3.0",
+        "Name": "Glasspane Start",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-Provides": ["org.kde.plasma.launchermenu"]
+}

@@ -1,0 +1,18 @@
+[Desktop Entry]
+Name=Glasspane
+Comment=Dark, light-weight Windows 11–style global theme with glassy panels
+Encoding=UTF-8
+Keywords=Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;
+
+Type=Service
+
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KDE-ParentApp=
+X-KDE-PluginInfo-Author=Joansitoh
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-License=GPL-3.0
+X-KDE-PluginInfo-Name=com.joansitoh.Glasspane
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=https://github.com/Joansitoh/glasspane-theme
+X-KDE-fallbackPackage=org.kde.breeze.desktop
+X-Plasma-MainScript=defaults

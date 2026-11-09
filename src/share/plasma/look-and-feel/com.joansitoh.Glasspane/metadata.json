@@ -1,0 +1,17 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [{"Name": "Joansitoh"}],
+        "Category": "Global Themes (Plasma 6)",
+        "Description": "Dark, light-weight Windows 11–style global theme with glassy panels, a centered taskbar and its own start menu (based on Win11OS-kde by yeyushengfan258)",
+        "EnabledByDefault": true,
+        "Id": "com.joansitoh.Glasspane",
+        "License": "GPL-3.0",
+        "Version": "1.0",
+        "Name": "Glasspane",
+        "Website": "https://github.com/Joansitoh/glasspane-theme"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-KDE-fallbackPackage": "org.kde.breeze.desktop",
+    "X-Plasma-APIVersion": "2"
+}
